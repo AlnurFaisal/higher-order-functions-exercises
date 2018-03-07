@@ -1,17 +1,23 @@
 function multiplyBy10(array) {
-  return array;
+  return array.map(element => element * 10);
+}
+
+const isVowel = chr => "aeiou".includes(chr);
+
+function keepVowel(word){
+  return word.split("").filter(isVowel).join("");
 }
 
 function onlyVowels(array) {
-  return array;
+  return array.map(keepVowel);
 }
 
-function doubleMatrix(array) {
-  return array;
+function doubleMatrix(matrix) {
+  return matrix.map(row => row.map(elem => elem * 2));
 }
 
 function onlyNames(array) {
-  return array;
+  return array.map(obj => obj.name);
 }
 
 module.exports = {

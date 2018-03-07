@@ -1,13 +1,18 @@
+const reducer = (accumulator, current) => {return accumulator + current;}
+
 function sum(array) {
-  return array;
+  return array.reduce(reducer);
 }
 
-function productAll(array) {
-  return array;
+const reduceArray = (accumulator, current) => {return accumulator.concat(current);}
+const productNumber = (accumulator, current) => {return accumulator * current;}
+
+function productAll(matrix) {
+  return matrix.reduce(reduceArray, []).reduce(productNumber, 1);
 }
 
 function luckyNumbers(array) {
-  return array;
+  return "Your lucky numbers are: " + array.join(", ") + ".";
 }
 
 module.exports = {
