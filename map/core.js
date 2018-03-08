@@ -6,6 +6,8 @@ const isVowel = chr => "aeiou".includes(chr);
 
 function keepVowel(word){
   return word.split("").filter(isVowel).join("");
+  // given that keepVowel is returning a vowelized word (e.g. average -> aeae),
+  // the function could be better named as vowelizeWord() or removeConsonants()
 }
 
 function onlyVowels(array) {

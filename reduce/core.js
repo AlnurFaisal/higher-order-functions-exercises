@@ -13,6 +13,7 @@ function productAll(matrix) {
 
 function luckyNumbers(array) {
   return "Your lucky numbers are: " + array.join(", ") + ".";
+  // interesting and straightforward solution!
 }
 
 module.exports = {

@@ -4,6 +4,7 @@ function onlyEven(array) {
 
 function onlyOneWord(array) {
   return array.filter(array => array.indexOf(' ') === -1);
+  // nice! interesting solution
 }
 
 function isPositive(element){
@@ -18,6 +19,7 @@ function positiveRowsOnly(matrix) {
 
 function truthyValuesOnly(array) {
   return array.filter(row => row);
+  // interesting solution.
 }
 
 module.exports = {

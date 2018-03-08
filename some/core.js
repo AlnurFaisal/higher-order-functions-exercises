@@ -14,6 +14,9 @@ function longWord(input) {
 // the matrix are true.
 function truePossibilities(input) {
   return input.some(row => row.some(element => element));
+  // you could consider renaming element to isTrue, so that the reader
+  // won't scratch his head and think about why you're just returning the element
+  // return input.some(row => row.some(isTrue => isTrue));
 }
 
 // Check to see if 'Lost' is in
